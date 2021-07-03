@@ -1,0 +1,45 @@
+package aula_03;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author cezar
+ */
+public class Aula_03 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("escolha 3 valores nos quais a soma seja igual a 100");
+        System.out.println("por favor, esolha 3 numeros");
+        Scanner entrada = new Scanner (System.in);
+        
+        int numero1;
+        numero1 = entrada.nextInt();
+        
+        int numero2;
+        numero2 = entrada.nextInt();
+        
+        int numero3;
+        numero3 = entrada.nextInt();
+        
+        int soma;
+        soma = numero1 + numero2 + numero3;
+        
+        if (soma == 100 ){
+            System.out.println("parabens, voce venceu o desafio!");
+        }
+        else if (soma <= 50){
+            System.out.println("voce está na quase lá!");
+        }
+        
+        else if (soma > 100 ){
+            System.out.println("voce passou do resultado exigido no exercicio!");
+        }
+       
+    }
+       
+}
